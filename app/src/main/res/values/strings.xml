@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sampleMap</string>
+    <string name="permission_check">please check app permission</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sample.gps.GpsActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gpsMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.kt.maps.GMapFragment"
+            map:centerX="956820"
+            map:centerY="1942285"
+            map:rotation="0"
+            map:tilt="0"
+            map:zoom="8" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnLocationTracking"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/gps_off"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>
